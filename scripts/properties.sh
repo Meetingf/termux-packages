@@ -43,13 +43,13 @@ TERMUX_CONFIG_PREFIX_DIR_PATH="${TERMUX_ETC_PREFIX_DIR_PATH}/termux"
 TERMUX_BOOTSTRAP_CONFIG_DIR_PATH="${TERMUX_CONFIG_PREFIX_DIR_PATH}/bootstrap"
 
 # Path to CGCT tools
-CGCT_DEFAULT_PREFIX="/data/data/com.dna.tools/files/usr/glibc"
-export CGCT_DIR="/data/data/com.dna.tools/cgct"
+CGCT_DEFAULT_PREFIX="/data/data/com.termux/files/usr/glibc"
+export CGCT_DIR="/data/data/com.termux/cgct"
 
 # Package name for the packages hosted on the repo.
 # This must only equal TERMUX_APP_PACKAGE if using custom repo that
 # has packages that were built with same package name.
-TERMUX_REPO_PACKAGE="com.dna.tools"
+TERMUX_REPO_PACKAGE="com.termux"
 
 # Termux repo urls.
 TERMUX_REPO_URL=()
