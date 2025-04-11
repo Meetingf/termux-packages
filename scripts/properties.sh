@@ -30,12 +30,12 @@ else
 fi
 
 # Termux packages configuration.
-TERMUX_APP_PACKAGE="com.termux"
+TERMUX_APP_PACKAGE="com.dna.tools"
 TERMUX_BASE_DIR="/data/data/${TERMUX_APP_PACKAGE}/files"
 TERMUX_CACHE_DIR="/data/data/${TERMUX_APP_PACKAGE}/cache"
 TERMUX_ANDROID_HOME="${TERMUX_BASE_DIR}/home"
 TERMUX_APPS_DIR="${TERMUX_BASE_DIR}/apps"
-TERMUX_PREFIX_CLASSICAL="${TERMUX_BASE_DIR}/usr"
+TERMUX_PREFIX_CLASSICAL="${TERMUX_BASE_DIR}/module/openjre"
 TERMUX_PREFIX="${TERMUX_PREFIX_CLASSICAL}"
 TERMUX_ETC_PREFIX_DIR_PATH="${TERMUX_PREFIX}/etc"
 TERMUX_PROFILE_D_PREFIX_DIR_PATH="${TERMUX_ETC_PREFIX_DIR_PATH}/profile.d"
@@ -43,13 +43,13 @@ TERMUX_CONFIG_PREFIX_DIR_PATH="${TERMUX_ETC_PREFIX_DIR_PATH}/termux"
 TERMUX_BOOTSTRAP_CONFIG_DIR_PATH="${TERMUX_CONFIG_PREFIX_DIR_PATH}/bootstrap"
 
 # Path to CGCT tools
-CGCT_DEFAULT_PREFIX="/data/data/com.termux/files/usr/glibc"
-export CGCT_DIR="/data/data/com.termux/cgct"
+CGCT_DEFAULT_PREFIX="/data/data/com.dna.tools/files/usr/glibc"
+export CGCT_DIR="/data/data/com.dna.tools/cgct"
 
 # Package name for the packages hosted on the repo.
 # This must only equal TERMUX_APP_PACKAGE if using custom repo that
 # has packages that were built with same package name.
-TERMUX_REPO_PACKAGE="com.termux"
+TERMUX_REPO_PACKAGE="com.dna.tools"
 
 # Termux repo urls.
 TERMUX_REPO_URL=()
