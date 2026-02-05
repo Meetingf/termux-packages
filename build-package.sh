@@ -524,11 +524,6 @@ unset -f _show_usage
 
 # Dependencies should be used from repo only if they are built for
 # same package name.
-if [ "$TERMUX_REPO_PACKAGE" != "$TERMUX_APP_PACKAGE" ]; then
-	echo "Ignoring -i option to download dependencies since repo package name ($TERMUX_REPO_PACKAGE) does not equal app package name ($TERMUX_APP_PACKAGE)"
-	TERMUX_INSTALL_DEPS=false
-fi
-
 if [ "$TERMUX_REPO_PKG_FORMAT" != "debian" ] && [ "$TERMUX_REPO_PKG_FORMAT" != "pacman" ]; then
 	termux_error_exit "'pkg_format' is incorrectly specified in repo.json file. Only 'debian' and 'pacman' formats are supported"
 fi
